@@ -1,3 +1,10 @@
+.DS_Store
+__pycache__/
+.vscode/
+build/
+cmake-variants.yaml
+G4History.macro
+
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles

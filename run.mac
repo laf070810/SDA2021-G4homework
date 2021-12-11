@@ -1,0 +1,77 @@
+# Macro file for example B4
+# 
+# To be run preferably in batch, without graphics:
+# % exampleB4[a,b,c,d] run2.mac
+#
+#/run/numberOfThreads 4
+#/control/cout/ignoreThreadsExcept 0
+#
+/run/initialize
+#
+# Default kinemtics: 
+# electron 50 MeV in direction (0.,0.,1.)
+# 1000 events
+#
+/run/printProgress 100
+
+/gun/energy 0.5 GeV
+/run/beamOn 5000
+
+/gun/energy 1 GeV
+/run/beamOn 5000
+
+/gun/energy 1.5 GeV
+/run/beamOn 5000
+
+/gun/energy 2 GeV
+/run/beamOn 5000
+
+/gun/energy 2.5 GeV
+/run/beamOn 5000
+
+/gun/energy 3 GeV
+/run/beamOn 5000
+
+/gun/energy 3.5 GeV
+/run/beamOn 5000
+
+/gun/energy 4 GeV
+/run/beamOn 5000
+
+/gun/energy 4.5 GeV
+/run/beamOn 5000
+
+/gun/energy 5 GeV
+/run/beamOn 5000
+
+/gun/energy 5.5 GeV
+/run/beamOn 5000
+
+/gun/energy 6 GeV
+/run/beamOn 5000
+
+/gun/energy 6.5 GeV
+/run/beamOn 5000
+
+/gun/energy 7 GeV
+/run/beamOn 5000
+
+/gun/energy 7.5 GeV
+/run/beamOn 5000
+
+/gun/energy 8 GeV
+/run/beamOn 5000
+
+/gun/energy 8.5 GeV
+/run/beamOn 5000
+
+/gun/energy 9 GeV
+/run/beamOn 5000
+
+/gun/energy 9.5 GeV
+/run/beamOn 5000
+
+/gun/energy 10 GeV
+/run/beamOn 5000
+
+
