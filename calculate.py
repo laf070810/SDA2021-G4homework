@@ -3,8 +3,8 @@ import numpy as np
 
 
 scintillator_layer_num = 67
-cell_num_on_x_per_layer = 7
-cell_num_on_y_per_layer = 7
+cell_num_on_x_per_layer = 10
+cell_num_on_y_per_layer = 10
 cell_width_on_x = 40.4
 cell_width_on_y = 40.4
 scintillator_thickness = 4.
@@ -18,7 +18,7 @@ calorimeter_size_z = scintillator_layer_num * scintillator_thickness + \
     (scintillator_layer_num - 1) * gap_thickness + 2 * (Fe_thickness + plastic_thickness)
 world_size_x = 1.2 * calorimeter_size_x
 world_size_y = 1.2 * calorimeter_size_y
-world_size_z = 1.2 * calorimeter_size_z
+world_size_z = 1.2 * (calorimeter_size_z + 2 * 5000)
 first_position = -calorimeter_size_z / 2
 
 
