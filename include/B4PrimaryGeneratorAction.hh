@@ -44,6 +44,8 @@
 #include "G4VUserPrimaryGeneratorAction.hh"
 #include "globals.hh"
 
+#include <cmath>
+
 /// The primary generator action class with particle gum.
 ///
 /// It defines a single particle which hits the calorimeter

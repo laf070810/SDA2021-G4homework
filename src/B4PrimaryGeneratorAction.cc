@@ -42,7 +42,6 @@ B4PrimaryGeneratorAction::B4PrimaryGeneratorAction()
   //
   auto particleDefinition = G4ParticleTable::GetParticleTable()->FindParticle("gamma");
   fParticleGun->SetParticleDefinition(particleDefinition);
-  fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
   fParticleGun->SetParticleEnergy(5. * GeV);
 }
 
@@ -90,6 +89,16 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event *anEvent)
   // Set gun position
   fParticleGun
       ->SetParticlePosition(G4ThreeVector(0., 0., -calorimeterZHalfLength - 5 * m));
+
+  // fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
+
+  const G4double pi = 3.1415926536;
+  G4double theta = std::sqrt(0.01 / pi) * G4UniformRand();
+  G4double phi = 2 * pi * G4UniformRand();
+  G4double x_direction = std::sin(theta) * std::cos(phi);
+  G4double y_direction = std::sin(theta) * std::cos(phi);
+  G4double z_direction = std::cos(theta);
+  fParticleGun->SetParticleMomentumDirection(G4ThreeVector(x_direction, y_direction, z_direction));
 
   fParticleGun->GeneratePrimaryVertex(anEvent);
 }
