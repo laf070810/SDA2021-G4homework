@@ -84,10 +84,10 @@ public:
 public:
   // Geometry parameters
   const G4int scintillator_layer_num = 67;
-  const G4int cell_num_on_x_per_layer = 7;
-  const G4int cell_num_on_y_per_layer = 7;
-  const G4double cell_width_on_x = 40.4 * mm;
-  const G4double cell_width_on_y = 40.4 * mm;
+  const G4int cell_num_on_x_per_layer = 10;
+  const G4int cell_num_on_y_per_layer = 10;
+  const G4double cell_width_on_x = 4.04 * mm;
+  const G4double cell_width_on_y = 4.04 * mm;
   const G4double scintillator_thickness = 4. * mm;
   const G4double gap_thickness = 2. * mm;
   const G4double Fe_thickness = 1. * mm;
