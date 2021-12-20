@@ -63,24 +63,24 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event *anEvent)
   // on DetectorConstruction class we get world volume
   // from G4LogicalVolumeStore
   //
-  G4double worldZHalfLength = 0.;
-  auto worldLV = G4LogicalVolumeStore::GetInstance()->GetVolume("World");
+  G4double calorimeterZHalfLength = 0.;
+  auto calorimeterLV = G4LogicalVolumeStore::GetInstance()->GetVolume("Calorimeter");
 
-  // Check that the world volume has box shape
-  G4Box *worldBox = nullptr;
-  if (worldLV)
+  // Check that the calorimeter volume has box shape
+  G4Box *calorimeterBox = nullptr;
+  if (calorimeterLV)
   {
-    worldBox = dynamic_cast<G4Box *>(worldLV->GetSolid());
+    calorimeterBox = dynamic_cast<G4Box *>(calorimeterLV->GetSolid());
   }
 
-  if (worldBox)
+  if (calorimeterBox)
   {
-    worldZHalfLength = worldBox->GetZHalfLength();
+    calorimeterZHalfLength = calorimeterBox->GetZHalfLength();
   }
   else
   {
     G4ExceptionDescription msg;
-    msg << "World volume of box shape not found." << G4endl;
+    msg << "Calorimeter volume of box shape not found." << G4endl;
     msg << "Perhaps you have changed geometry." << G4endl;
     msg << "The gun will be place in the center.";
     G4Exception("B4PrimaryGeneratorAction::GeneratePrimaries()",
@@ -89,7 +89,7 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event *anEvent)
 
   // Set gun position
   fParticleGun
-      ->SetParticlePosition(G4ThreeVector(0., 0., -worldZHalfLength));
+      ->SetParticlePosition(G4ThreeVector(0., 0., -calorimeterZHalfLength - 5 * m));
 
   fParticleGun->GeneratePrimaryVertex(anEvent);
 }
