@@ -45,8 +45,6 @@ target_link_libraries(exampleB4a ${Geant4_LIBRARIES})
 # relies on these scripts being in the current working directory.
 #
 set(EXAMPLEB4A_SCRIPTS
-  exampleB4a.out
-  exampleB4.in
   gui.mac
   init_vis.mac
   plotHisto.C
