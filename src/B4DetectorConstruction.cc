@@ -95,7 +95,7 @@ G4VPhysicalVolume *B4DetectorConstruction::DefineVolumes()
     auto calorimeter_size_z = scintillator_layer_num * scintillator_thickness + (scintillator_layer_num - 1) * gap_thickness + 2 * (Fe_thickness + plastic_thickness);
     auto world_size_x = 1.2 * calorimeter_size_x;
     auto world_size_y = 1.2 * calorimeter_size_y;
-    auto world_size_z = 1.2 * calorimeter_size_z;
+    auto world_size_z = 1.2 * (calorimeter_size_z + 2 * 5 * m);
     auto first_position = -calorimeter_size_z / 2;
 
     // Get materials
