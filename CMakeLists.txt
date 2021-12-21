@@ -47,8 +47,6 @@ target_link_libraries(exampleB4a ${Geant4_LIBRARIES})
 set(EXAMPLEB4A_SCRIPTS
   gui.mac
   init_vis.mac
-  plotHisto.C
-  plotNtuple.C
   run.mac
   vis.mac
   )
