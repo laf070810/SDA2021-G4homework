@@ -1,0 +1,5 @@
+# Macro file for analyzing moliere radius
+
+/run/initialize
+/run/printProgress 100
+/run/beamOn 5000
