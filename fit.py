@@ -1,28 +1,24 @@
-from ROOT import *
 import json
+import numpy as np
+from ROOT import *
 
-Esum_means = [0 for _ in range(20)]
-Esum_mean_errors = [0 for _ in range(20)]
-Esum_sigmas = [0 for _ in range(20)]
-Esum_sigmas_errors = [0 for _ in range(20)]
+Esum_means = [0 for _ in range(6)]
+Esum_mean_errors = [0 for _ in range(6)]
+Esum_sigmas = [0 for _ in range(6)]
+Esum_sigmas_errors = [0 for _ in range(6)]
 
-shower_x_means = [0 for _ in range(20)]
-shower_x_mean_errors = [0 for _ in range(20)]
-shower_x_sigmas = [0 for _ in range(20)]
-shower_x_sigmas_errors = [0 for _ in range(20)]
+shower_x_means = [0 for _ in range(6)]
+shower_x_mean_errors = [0 for _ in range(6)]
+shower_x_sigmas = [0 for _ in range(6)]
+shower_x_sigmas_errors = [0 for _ in range(6)]
 
-shower_y_means = [0 for _ in range(20)]
-shower_y_mean_errors = [0 for _ in range(20)]
-shower_y_sigmas = [0 for _ in range(20)]
-shower_y_sigmas_errors = [0 for _ in range(20)]
+shower_y_means = [0 for _ in range(6)]
+shower_y_mean_errors = [0 for _ in range(6)]
+shower_y_sigmas = [0 for _ in range(6)]
+shower_y_sigmas_errors = [0 for _ in range(6)]
 
-shower_z_means = [0 for _ in range(20)]
-shower_z_mean_errors = [0 for _ in range(20)]
-shower_z_sigmas = [0 for _ in range(20)]
-shower_z_sigmas_errors = [0 for _ in range(20)]
-
-for i in range(20):
-    photon_energy = 0.5 * (i + 1)
+for i in range(6):
+    photon_energy = [1, 2, 5, 10, 50, 100][i]
 
     f = TFile(f'data/E_and_position_{photon_energy}GeV.root')
     tr = f.Get('E_and_position')
@@ -30,7 +26,7 @@ for i in range(20):
 
     w = RooWorkspace('Esum_fit')
     w.factory(
-        f'RooGaussian::gauss(Esum[{0 + 70 * i}, {400 + 70 * i}], mean[{0 + 70 * i}, {400 + 70 * i}], sigma[30, 0.1, 80])')
+        f'RooGaussian::gauss(Esum[{-100 + 130 * photon_energy}, {100 + 170 * photon_energy}], mean[{-100 + 130 * photon_energy}, {100 + 170 * photon_energy}], sigma[0.1, {100 * np.sqrt(photon_energy)}])')
     Esum = w.var('Esum')
     mean = w.var('mean')
     sigma = w.var('sigma')
@@ -82,24 +78,6 @@ for i in range(20):
     w.Write()
     result.Write()
 
-    w = RooWorkspace('shower_z_fit')
-    w.factory(
-        f'RooGaussian::gauss(shower_z[{-200 + 3 * i}, {50 + 1.5 * i}], mean[{-200 + 3 * i}, {50 + 1.5 * i}], sigma[50, 0, 100])')
-    shower_z = w.var('shower_z')
-    mean = w.var('mean')
-    sigma = w.var('sigma')
-    model = w.pdf('gauss')
-    data = RooDataSet('ShowerZData', 'ShowerZData', tr, shower_z)
-    result = model.fitTo(data, RooFit.Save())
-
-    shower_z_means[i] = mean.getValV()
-    shower_z_mean_errors[i] = mean.getError()
-    shower_z_sigmas[i] = sigma.getValV()
-    shower_z_sigmas_errors[i] = sigma.getError()
-    data.Write()
-    w.Write()
-    result.Write()
-
     nf.Close()
     f.Close()
 
@@ -116,9 +94,5 @@ result['shower_y_means'] = shower_y_means
 result['shower_y_mean_errors'] = shower_y_mean_errors
 result['shower_y_sigmas'] = shower_y_sigmas
 result['shower_y_sigma_errors'] = shower_y_sigmas_errors
-result['shower_z_means'] = shower_z_means
-result['shower_z_mean_errors'] = shower_z_mean_errors
-result['shower_z_sigmas'] = shower_z_sigmas
-result['shower_z_sigma_errors'] = shower_z_sigmas_errors
 with open('data/calibration.json', 'w') as f:
     json.dump(result, f)
