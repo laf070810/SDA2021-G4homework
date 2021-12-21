@@ -16,6 +16,17 @@ def draw_1Dhists(hists):
         canvas.SaveAs('hists/' + hist.GetName()[1:] + '.pdf')
 
 
+def draw_2Dhists(hists):
+    for hist in hists:
+        canvas = TCanvas("canvas", "")
+        gPad.SetLeftMargin(0.16)
+        gPad.SetRightMargin(0.1)
+        hist.SetStats(False)
+        hist.GetYaxis().SetTitleOffset(1.1)
+        hist.Draw('colz')
+        canvas.SaveAs('hists/' + hist.GetName()[1:] + ".pdf")
+
+
 for i in range(6):
     photon_energy = [1, 2, 5, 10, 50, 100][i]
 
@@ -26,6 +37,10 @@ for i in range(6):
     hE = TH1F(f"hE_{photon_energy}GeV", "E_{sum} (MeV)", nBins, -100 + 130 * photon_energy, 100 + 170 * photon_energy)
     hShowerX = TH1F(f"hShowerX_{photon_energy}GeV", "x (mm)", nBins, -100, 100)
     hShowerY = TH1F(f"hShowerY_{photon_energy}GeV", "y (mm)", nBins, -100, 100)
+    hShowerX_ShowerY = TH2F(
+        f"hShowerX_ShowerY_{photon_energy}GeV", "x (mm);y (mm);",
+        nBins, -100, 100,
+        nBins, -100, 100)
 
     num = 0
     for event in tr:
@@ -36,5 +51,7 @@ for i in range(6):
         hE.Fill(event.Esum)
         hShowerX.Fill(event.shower_x)
         hShowerY.Fill(event.shower_y)
+        hShowerX_ShowerY.Fill(event.shower_x, event.shower_y)
 
     draw_1Dhists([hE, hShowerX, hShowerY])
+    draw_2Dhists([hShowerX_ShowerY])
