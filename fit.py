@@ -26,11 +26,11 @@ for i in range(6):
 
     w = RooWorkspace('Esum_fit')
     w.factory(
-        f'RooGaussian::gauss(Esum[{-100 + 130 * photon_energy}, {100 + 170 * photon_energy}], mean[{-100 + 130 * photon_energy}, {100 + 170 * photon_energy}], sigma[0.1, {100 * np.sqrt(photon_energy)}])')
+        f'RooCBShape::cbs(Esum[{-100 + 130 * photon_energy}, {100 + 170 * photon_energy}], mean[{-100 + 130 * photon_energy}, {100 + 170 * photon_energy}], sigma[0.1, {100 * np.sqrt(photon_energy)}], alpha[0, 5], n[0, 2])')
     Esum = w.var('Esum')
     mean = w.var('mean')
     sigma = w.var('sigma')
-    model = w.pdf('gauss')
+    model = w.pdf('cbs')
     data = RooDataSet('EsumData', 'EsumData', tr, Esum)
     result = model.fitTo(data, RooFit.Save())
 

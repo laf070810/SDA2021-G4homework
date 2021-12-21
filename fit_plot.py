@@ -120,7 +120,7 @@ for i in range(6):
 
     w = f.Get('Esum_fit')
     Esum = w.var('Esum')
-    model = w.pdf('gauss')
+    model = w.pdf('cbs')
     data = f.Get('EsumData')
 
     frame = Esum.frame()
