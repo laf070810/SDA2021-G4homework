@@ -94,5 +94,5 @@ result['shower_y_means'] = shower_y_means
 result['shower_y_mean_errors'] = shower_y_mean_errors
 result['shower_y_sigmas'] = shower_y_sigmas
 result['shower_y_sigma_errors'] = shower_y_sigmas_errors
-with open('data/calibration.json', 'w') as f:
+with open('data/calibration_data.json', 'w') as f:
     json.dump(result, f)
