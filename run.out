@@ -7632,65 +7632,65 @@ Max 2J for sampling of angular correlations         10
 --> G4MTRunManager::CreateAndStartWorkers() --> Initializing workers...
 =======================================================================
 
-G4WT5 > Using Root
-G4WT4 > Using Root
-G4WT6 > Using Root
-G4WT2 > Using Root
-G4WT1 > Using Root
-G4WT0 > Using Root
 G4WT7 > Using Root
+G4WT1 > Using Root
+G4WT4 > Using Root
 G4WT3 > Using Root
+G4WT0 > Using Root
+G4WT2 > Using Root
+G4WT6 > Using Root
+G4WT5 > Using Root
 G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
 See commands in /vis/modeling/trajectories/ for other options.
 ### Run 0 starts.
 ... create file : B4_0.root - done
 ... open main analysis file : B4_0.root - done
 G4WT5 > ### Run 0 starts on worker thread 5.
-G4WT3 > ### Run 0 starts on worker thread 3.
-G4WT6 > ### Run 0 starts on worker thread 6.
-G4WT4 > ### Run 0 starts on worker thread 4.
-G4WT7 > ### Run 0 starts on worker thread 7.
-G4WT2 > ### Run 0 starts on worker thread 2.
-G4WT0 > ### Run 0 starts on worker thread 0.
 G4WT1 > ### Run 0 starts on worker thread 1.
-G4WT3 > --> Event 0 starts with initial seeds (13049039,61775110).
-G4WT3 > ---> End of event: 0
-G4WT3 >    Absorber: total energy:     130 MeV
-G4WT6 > --> Event 100 starts with initial seeds (82536138,67187234).
-G4WT6 > ---> End of event: 100
-G4WT6 >    Absorber: total energy:     125 MeV
-G4WT6 > --> Event 200 starts with initial seeds (18121444,73015479).
-G4WT6 > ---> End of event: 200
-G4WT6 >    Absorber: total energy:     130 MeV
+G4WT7 > ### Run 0 starts on worker thread 7.
+G4WT4 > ### Run 0 starts on worker thread 4.
+G4WT3 > ### Run 0 starts on worker thread 3.
+G4WT0 > ### Run 0 starts on worker thread 0.
+G4WT6 > ### Run 0 starts on worker thread 6.
+G4WT2 > ### Run 0 starts on worker thread 2.
+G4WT7 > --> Event 0 starts with initial seeds (13049039,61775110).
+G4WT7 > ---> End of event: 0
+G4WT7 >    Absorber: total energy:     113 MeV
+G4WT5 > --> Event 100 starts with initial seeds (82536138,67187234).
+G4WT5 > ---> End of event: 100
+G4WT5 >    Absorber: total energy:     124 MeV
+G4WT0 > --> Event 200 starts with initial seeds (18121444,73015479).
+G4WT0 > ---> End of event: 200
+G4WT0 >    Absorber: total energy:     121 MeV
 G4WT0 > --> Event 300 starts with initial seeds (57661392,63196147).
 G4WT0 > ---> End of event: 300
-G4WT0 >    Absorber: total energy:     113 MeV
-G4WT2 > --> Event 400 starts with initial seeds (1794836,82896764).
-G4WT2 > ---> End of event: 400
-G4WT2 >    Absorber: total energy:     119 MeV
+G4WT0 >    Absorber: total energy:     116 MeV
+G4WT5 > --> Event 400 starts with initial seeds (1794836,82896764).
+G4WT5 > ---> End of event: 400
+G4WT5 >    Absorber: total energy:     113 MeV
 G4WT2 > --> Event 500 starts with initial seeds (32157470,33699765).
 G4WT2 > ---> End of event: 500
-G4WT2 >    Absorber: total energy:     107 MeV
-G4WT0 > --> Event 600 starts with initial seeds (6383967,15098958).
-G4WT0 > ---> End of event: 600
-G4WT0 >    Absorber: total energy:     107 MeV
-G4WT4 > --> Event 700 starts with initial seeds (40832213,8483146).
-G4WT4 > ---> End of event: 700
-G4WT4 >    Absorber: total energy:     140 MeV
+G4WT2 >    Absorber: total energy:     121 MeV
+G4WT6 > --> Event 600 starts with initial seeds (6383967,15098958).
+G4WT6 > ---> End of event: 600
+G4WT6 >    Absorber: total energy:     110 MeV
+G4WT1 > --> Event 700 starts with initial seeds (40832213,8483146).
+G4WT1 > ---> End of event: 700
+G4WT1 >    Absorber: total energy:     132 MeV
 G4WT7 > --> Event 800 starts with initial seeds (62434538,48082466).
 G4WT7 > ---> End of event: 800
-G4WT7 >    Absorber: total energy:     131 MeV
-G4WT7 > --> Event 900 starts with initial seeds (68953005,36844767).
-G4WT7 > ---> End of event: 900
-G4WT7 >    Absorber: total energy:     110 MeV
+G4WT7 >    Absorber: total energy:     113 MeV
+G4WT4 > --> Event 900 starts with initial seeds (68953005,36844767).
+G4WT4 > ---> End of event: 900
+G4WT4 >    Absorber: total energy:     115 MeV
 G4WT3 > ... merge slave ntuples - done
+G4WT6 > ... merge slave ntuples - done
 G4WT2 > ... merge slave ntuples - done
-G4WT0 > ... merge slave ntuples - done
 G4WT5 > ... merge slave ntuples - done
+G4WT1 > ... merge slave ntuples - done
+G4WT0 > ... merge slave ntuples - done
 G4WT4 > ... merge slave ntuples - done
 G4WT7 > ... merge slave ntuples - done
-G4WT6 > ... merge slave ntuples - done
-G4WT1 > ... merge slave ntuples - done
 ... merge main ntuples - done
 ... write file : B4_0.root - done
 ... close file : B4_0.root - done
@@ -7700,52 +7700,52 @@ G4WT1 > ... merge slave ntuples - done
 ### Run 1 starts.
 ... create file : B4_1.root - done
 ... open main analysis file : B4_1.root - done
-G4WT1 > ### Run 1 starts on worker thread 1.
+G4WT0 > ### Run 1 starts on worker thread 0.
 G4WT2 > ### Run 1 starts on worker thread 2.
 G4WT3 > ### Run 1 starts on worker thread 3.
-G4WT4 > ### Run 1 starts on worker thread 4.
-G4WT6 > ### Run 1 starts on worker thread 6.
 G4WT7 > ### Run 1 starts on worker thread 7.
+G4WT6 > ### Run 1 starts on worker thread 6.
+G4WT4 > ### Run 1 starts on worker thread 4.
+G4WT1 > ### Run 1 starts on worker thread 1.
 G4WT5 > ### Run 1 starts on worker thread 5.
-G4WT0 > ### Run 1 starts on worker thread 0.
-G4WT1 > --> Event 0 starts with initial seeds (32766986,29233990).
-G4WT1 > ---> End of event: 0
-G4WT1 >    Absorber: total energy:     225 MeV
-G4WT3 > --> Event 100 starts with initial seeds (45001937,9544486).
-G4WT3 > ---> End of event: 100
-G4WT3 >    Absorber: total energy:     234 MeV
-G4WT3 > --> Event 200 starts with initial seeds (81249407,57561016).
-G4WT3 > ---> End of event: 200
-G4WT3 >    Absorber: total energy:     257 MeV
+G4WT2 > --> Event 0 starts with initial seeds (32766986,29233990).
+G4WT2 > ---> End of event: 0
+G4WT2 >    Absorber: total energy:     255 MeV
+G4WT5 > --> Event 100 starts with initial seeds (45001937,9544486).
+G4WT5 > ---> End of event: 100
+G4WT5 >    Absorber: total energy:     294 MeV
+G4WT0 > --> Event 200 starts with initial seeds (81249407,57561016).
+G4WT0 > ---> End of event: 200
+G4WT0 >    Absorber: total energy:     252 MeV
 G4WT5 > --> Event 300 starts with initial seeds (20914466,2104219).
 G4WT5 > ---> End of event: 300
-G4WT5 >    Absorber: total energy:     269 MeV
-G4WT5 > --> Event 400 starts with initial seeds (61438156,75190156).
-G4WT5 > ---> End of event: 400
-G4WT5 >    Absorber: total energy:     235 MeV
-G4WT6 > --> Event 500 starts with initial seeds (78177083,27457352).
-G4WT6 > ---> End of event: 500
-G4WT6 >    Absorber: total energy:     249 MeV
-G4WT2 > --> Event 600 starts with initial seeds (49353925,93547223).
-G4WT2 > ---> End of event: 600
-G4WT2 >    Absorber: total energy:     238 MeV
-G4WT1 > --> Event 700 starts with initial seeds (77772970,17644338).
-G4WT1 > ---> End of event: 700
-G4WT1 >    Absorber: total energy:     260 MeV
-G4WT7 > --> Event 800 starts with initial seeds (99662833,9880272).
-G4WT7 > ---> End of event: 800
-G4WT7 >    Absorber: total energy:     251 MeV
-G4WT4 > --> Event 900 starts with initial seeds (35242189,30837522).
-G4WT4 > ---> End of event: 900
-G4WT4 >    Absorber: total energy:     295 MeV
-G4WT0 > ... merge slave ntuples - done
+G4WT5 >    Absorber: total energy:     272 MeV
+G4WT3 > --> Event 400 starts with initial seeds (61438156,75190156).
+G4WT3 > ---> End of event: 400
+G4WT3 >    Absorber: total energy:     269 MeV
+G4WT4 > --> Event 500 starts with initial seeds (78177083,27457352).
+G4WT4 > ---> End of event: 500
+G4WT4 >    Absorber: total energy:     270 MeV
+G4WT7 > --> Event 600 starts with initial seeds (49353925,93547223).
+G4WT7 > ---> End of event: 600
+G4WT7 >    Absorber: total energy:     278 MeV
+G4WT2 > --> Event 700 starts with initial seeds (77772970,17644338).
+G4WT2 > ---> End of event: 700
+G4WT2 >    Absorber: total energy:     275 MeV
+G4WT3 > --> Event 800 starts with initial seeds (99662833,9880272).
+G4WT3 > ---> End of event: 800
+G4WT3 >    Absorber: total energy:     252 MeV
+G4WT0 > --> Event 900 starts with initial seeds (35242189,30837522).
+G4WT0 > ---> End of event: 900
+G4WT0 >    Absorber: total energy:     276 MeV
 G4WT1 > ... merge slave ntuples - done
-G4WT5 > ... merge slave ntuples - done
 G4WT2 > ... merge slave ntuples - done
-G4WT6 > ... merge slave ntuples - done
-G4WT3 > ... merge slave ntuples - done
+G4WT5 > ... merge slave ntuples - done
 G4WT4 > ... merge slave ntuples - done
 G4WT7 > ... merge slave ntuples - done
+G4WT6 > ... merge slave ntuples - done
+G4WT3 > ... merge slave ntuples - done
+G4WT0 > ... merge slave ntuples - done
 ... merge main ntuples - done
 ... write file : B4_1.root - done
 ... close file : B4_1.root - done
@@ -7755,52 +7755,52 @@ G4WT7 > ... merge slave ntuples - done
 ### Run 2 starts.
 ... create file : B4_2.root - done
 ... open main analysis file : B4_2.root - done
-G4WT3 > ### Run 2 starts on worker thread 3.
 G4WT6 > ### Run 2 starts on worker thread 6.
-G4WT7 > ### Run 2 starts on worker thread 7.
-G4WT2 > ### Run 2 starts on worker thread 2.
 G4WT5 > ### Run 2 starts on worker thread 5.
 G4WT1 > ### Run 2 starts on worker thread 1.
 G4WT4 > ### Run 2 starts on worker thread 4.
-G4WT6 > --> Event 0 starts with initial seeds (49764252,54850316).
 G4WT0 > ### Run 2 starts on worker thread 0.
+G4WT2 > ### Run 2 starts on worker thread 2.
+G4WT6 > --> Event 0 starts with initial seeds (49764252,54850316).
+G4WT3 > ### Run 2 starts on worker thread 3.
+G4WT7 > ### Run 2 starts on worker thread 7.
 G4WT6 > ---> End of event: 0
-G4WT6 >    Absorber: total energy:     588 MeV
-G4WT4 > --> Event 100 starts with initial seeds (1712222,13100870).
-G4WT4 > ---> End of event: 100
-G4WT4 >    Absorber: total energy:     720 MeV
-G4WT0 > --> Event 200 starts with initial seeds (76870610,26772155).
-G4WT0 > ---> End of event: 200
-G4WT0 >    Absorber: total energy:     693 MeV
-G4WT3 > --> Event 300 starts with initial seeds (94040308,98075108).
-G4WT3 > ---> End of event: 300
-G4WT3 >    Absorber: total energy:     666 MeV
-G4WT7 > --> Event 400 starts with initial seeds (32271351,64271972).
-G4WT7 > ---> End of event: 400
-G4WT7 >    Absorber: total energy:     689 MeV
-G4WT7 > --> Event 500 starts with initial seeds (15142298,96027515).
-G4WT7 > ---> End of event: 500
-G4WT7 >    Absorber: total energy:     688 MeV
-G4WT1 > --> Event 600 starts with initial seeds (21033275,17858472).
-G4WT1 > ---> End of event: 600
-G4WT1 >    Absorber: total energy:     701 MeV
+G4WT6 >    Absorber: total energy:     675 MeV
+G4WT2 > --> Event 100 starts with initial seeds (1712222,13100870).
+G4WT2 > ---> End of event: 100
+G4WT2 >    Absorber: total energy:     698 MeV
+G4WT5 > --> Event 200 starts with initial seeds (76870610,26772155).
+G4WT5 > ---> End of event: 200
+G4WT5 >    Absorber: total energy:     728 MeV
+G4WT6 > --> Event 300 starts with initial seeds (94040308,98075108).
+G4WT6 > ---> End of event: 300
+G4WT6 >    Absorber: total energy:     701 MeV
+G4WT6 > --> Event 400 starts with initial seeds (32271351,64271972).
+G4WT6 > ---> End of event: 400
+G4WT6 >    Absorber: total energy:     676 MeV
+G4WT5 > --> Event 500 starts with initial seeds (15142298,96027515).
+G4WT5 > ---> End of event: 500
+G4WT5 >    Absorber: total energy:     677 MeV
+G4WT3 > --> Event 600 starts with initial seeds (21033275,17858472).
+G4WT3 > ---> End of event: 600
+G4WT3 >    Absorber: total energy:     720 MeV
 G4WT6 > --> Event 700 starts with initial seeds (60767892,48853360).
 G4WT6 > ---> End of event: 700
-G4WT6 >    Absorber: total energy:     636 MeV
+G4WT6 >    Absorber: total energy:     702 MeV
 G4WT4 > --> Event 800 starts with initial seeds (70338185,26639270).
 G4WT4 > ---> End of event: 800
-G4WT4 >    Absorber: total energy:     668 MeV
-G4WT5 > --> Event 900 starts with initial seeds (63708609,78120371).
-G4WT5 > ---> End of event: 900
-G4WT5 >    Absorber: total energy:     636 MeV
-G4WT3 > ... merge slave ntuples - done
-G4WT0 > ... merge slave ntuples - done
+G4WT4 >    Absorber: total energy:     710 MeV
+G4WT4 > --> Event 900 starts with initial seeds (63708609,78120371).
+G4WT4 > ---> End of event: 900
+G4WT4 >    Absorber: total energy:     704 MeV
 G4WT1 > ... merge slave ntuples - done
+G4WT0 > ... merge slave ntuples - done
 G4WT7 > ... merge slave ntuples - done
-G4WT6 > ... merge slave ntuples - done
 G4WT5 > ... merge slave ntuples - done
+G4WT6 > ... merge slave ntuples - done
 G4WT4 > ... merge slave ntuples - done
 G4WT2 > ... merge slave ntuples - done
+G4WT3 > ... merge slave ntuples - done
 ... merge main ntuples - done
 ... write file : B4_2.root - done
 ... close file : B4_2.root - done
@@ -7810,165 +7810,55 @@ G4WT2 > ... merge slave ntuples - done
 ### Run 3 starts.
 ... create file : B4_3.root - done
 ... open main analysis file : B4_3.root - done
-G4WT5 > ### Run 3 starts on worker thread 5.
-G4WT7 > ### Run 3 starts on worker thread 7.
 G4WT2 > ### Run 3 starts on worker thread 2.
-G4WT0 > ### Run 3 starts on worker thread 0.
-G4WT6 > ### Run 3 starts on worker thread 6.
-G4WT3 > ### Run 3 starts on worker thread 3.
 G4WT1 > ### Run 3 starts on worker thread 1.
+G4WT6 > ### Run 3 starts on worker thread 6.
+G4WT0 > ### Run 3 starts on worker thread 0.
 G4WT4 > ### Run 3 starts on worker thread 4.
-G4WT7 > --> Event 0 starts with initial seeds (74171463,44032866).
-G4WT7 > ---> End of event: 0
-G4WT7 >    Absorber: total energy:   1.352 GeV
-G4WT7 > --> Event 100 starts with initial seeds (42160806,59206480).
-G4WT7 > ---> End of event: 100
-G4WT7 >    Absorber: total energy:   1.444 GeV
-G4WT7 > --> Event 200 starts with initial seeds (63204895,43930524).
-G4WT7 > ---> End of event: 200
-G4WT7 >    Absorber: total energy:   1.386 GeV
-G4WT3 > --> Event 300 starts with initial seeds (82545705,48090824).
-G4WT3 > ---> End of event: 300
-G4WT3 >    Absorber: total energy:   1.408 GeV
-G4WT0 > --> Event 400 starts with initial seeds (6536318,85965382).
-G4WT0 > ---> End of event: 400
-G4WT0 >    Absorber: total energy:   1.422 GeV
-G4WT3 > --> Event 500 starts with initial seeds (26590967,77235015).
-G4WT3 > ---> End of event: 500
-G4WT3 >    Absorber: total energy:   1.435 GeV
-G4WT5 > --> Event 600 starts with initial seeds (56603237,13683176).
-G4WT5 > ---> End of event: 600
-G4WT5 >    Absorber: total energy:   1.442 GeV
-G4WT5 > --> Event 700 starts with initial seeds (73032069,89021468).
-G4WT5 > ---> End of event: 700
-G4WT5 >    Absorber: total energy:   1.419 GeV
-G4WT7 > --> Event 800 starts with initial seeds (19403299,18021571).
-G4WT7 > ---> End of event: 800
-G4WT7 >    Absorber: total energy:   1.376 GeV
-G4WT6 > --> Event 900 starts with initial seeds (53277334,24744045).
-G4WT6 > ---> End of event: 900
-G4WT6 >    Absorber: total energy:   1.493 GeV
-G4WT6 > ... merge slave ntuples - done
-G4WT3 > ... merge slave ntuples - done
-G4WT4 > ... merge slave ntuples - done
+G4WT7 > ### Run 3 starts on worker thread 7.
+G4WT3 > ### Run 3 starts on worker thread 3.
+G4WT5 > ### Run 3 starts on worker thread 5.
+G4WT2 > --> Event 0 starts with initial seeds (74171463,44032866).
+G4WT2 > ---> End of event: 0
+G4WT2 >    Absorber: total energy:   1.423 GeV
+G4WT0 > --> Event 100 starts with initial seeds (42160806,59206480).
+G4WT0 > ---> End of event: 100
+G4WT0 >    Absorber: total energy:   1.431 GeV
+G4WT1 > --> Event 200 starts with initial seeds (63204895,43930524).
+G4WT1 > ---> End of event: 200
+G4WT1 >    Absorber: total energy:   1.378 GeV
+G4WT6 > --> Event 300 starts with initial seeds (82545705,48090824).
+G4WT6 > ---> End of event: 300
+G4WT6 >    Absorber: total energy:   1.411 GeV
+G4WT5 > --> Event 400 starts with initial seeds (6536318,85965382).
+G4WT5 > ---> End of event: 400
+G4WT5 >    Absorber: total energy:     1.4 GeV
+G4WT2 > --> Event 500 starts with initial seeds (26590967,77235015).
+G4WT2 > ---> End of event: 500
+G4WT2 >    Absorber: total energy:   1.443 GeV
+G4WT4 > --> Event 600 starts with initial seeds (56603237,13683176).
+G4WT4 > ---> End of event: 600
+G4WT4 >    Absorber: total energy:   1.427 GeV
+G4WT7 > --> Event 700 starts with initial seeds (73032069,89021468).
+G4WT7 > ---> End of event: 700
+G4WT7 >    Absorber: total energy:   1.433 GeV
+G4WT3 > --> Event 800 starts with initial seeds (19403299,18021571).
+G4WT3 > ---> End of event: 800
+G4WT3 >    Absorber: total energy:   1.422 GeV
+G4WT3 > --> Event 900 starts with initial seeds (53277334,24744045).
+G4WT3 > ---> End of event: 900
+G4WT3 >    Absorber: total energy:   1.356 GeV
+G4WT7 > ... merge slave ntuples - done
 G4WT2 > ... merge slave ntuples - done
+G4WT4 > ... merge slave ntuples - done
+G4WT6 > ... merge slave ntuples - done
 G4WT5 > ... merge slave ntuples - done
 G4WT0 > ... merge slave ntuples - done
-G4WT7 > ... merge slave ntuples - done
 G4WT1 > ... merge slave ntuples - done
+G4WT3 > ... merge slave ntuples - done
 ... merge main ntuples - done
 ... write file : B4_3.root - done
 ... close file : B4_3.root - done
-0 events have been kept for refreshing and/or reviewing.
-  "/vis/reviewKeptEvents" to review them one by one.
-  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
-### Run 4 starts.
-... create file : B4_4.root - done
-... open main analysis file : B4_4.root - done
-G4WT5 > ### Run 4 starts on worker thread 5.
-G4WT7 > ### Run 4 starts on worker thread 7.
-G4WT0 > ### Run 4 starts on worker thread 0.
-G4WT3 > ### Run 4 starts on worker thread 3.
-G4WT6 > ### Run 4 starts on worker thread 6.
-G4WT2 > ### Run 4 starts on worker thread 2.
-G4WT5 > --> Event 0 starts with initial seeds (66846944,33828183).
-G4WT4 > ### Run 4 starts on worker thread 4.
-G4WT1 > ### Run 4 starts on worker thread 1.
-G4WT5 > ---> End of event: 0
-G4WT5 >    Absorber: total energy:   7.426 GeV
-G4WT7 > --> Event 100 starts with initial seeds (79202835,45247280).
-G4WT7 > ---> End of event: 100
-G4WT7 >    Absorber: total energy:   7.331 GeV
-G4WT7 > --> Event 200 starts with initial seeds (28637729,97481690).
-G4WT7 > ---> End of event: 200
-G4WT7 >    Absorber: total energy:   7.386 GeV
-G4WT7 > --> Event 300 starts with initial seeds (8957853,57469131).
-G4WT7 > ---> End of event: 300
-G4WT7 >    Absorber: total energy:   7.413 GeV
-G4WT5 > --> Event 400 starts with initial seeds (41964719,84532664).
-G4WT5 > ---> End of event: 400
-G4WT5 >    Absorber: total energy:   7.343 GeV
-G4WT3 > --> Event 500 starts with initial seeds (8291219,25257585).
-G4WT3 > ---> End of event: 500
-G4WT3 >    Absorber: total energy:   7.529 GeV
-G4WT1 > --> Event 600 starts with initial seeds (50298390,20239390).
-G4WT1 > ---> End of event: 600
-G4WT1 >    Absorber: total energy:   7.512 GeV
-G4WT2 > --> Event 700 starts with initial seeds (2517689,80320070).
-G4WT2 > ---> End of event: 700
-G4WT2 >    Absorber: total energy:   7.419 GeV
-G4WT4 > --> Event 800 starts with initial seeds (99767474,76154545).
-G4WT4 > ---> End of event: 800
-G4WT4 >    Absorber: total energy:   7.507 GeV
-G4WT6 > --> Event 900 starts with initial seeds (75889234,59766076).
-G4WT6 > ---> End of event: 900
-G4WT6 >    Absorber: total energy:   7.399 GeV
-G4WT3 > ... merge slave ntuples - done
-G4WT5 > ... merge slave ntuples - done
-G4WT7 > ... merge slave ntuples - done
-G4WT1 > ... merge slave ntuples - done
-G4WT2 > ... merge slave ntuples - done
-G4WT0 > ... merge slave ntuples - done
-G4WT4 > ... merge slave ntuples - done
-G4WT6 > ... merge slave ntuples - done
-... merge main ntuples - done
-... write file : B4_4.root - done
-... close file : B4_4.root - done
-0 events have been kept for refreshing and/or reviewing.
-  "/vis/reviewKeptEvents" to review them one by one.
-  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
-### Run 5 starts.
-... create file : B4_5.root - done
-... open main analysis file : B4_5.root - done
-G4WT3 > ### Run 5 starts on worker thread 3.
-G4WT1 > ### Run 5 starts on worker thread 1.
-G4WT2 > ### Run 5 starts on worker thread 2.
-G4WT6 > ### Run 5 starts on worker thread 6.
-G4WT7 > ### Run 5 starts on worker thread 7.
-G4WT4 > ### Run 5 starts on worker thread 4.
-G4WT5 > ### Run 5 starts on worker thread 5.
-G4WT3 > --> Event 0 starts with initial seeds (8383287,34842104).
-G4WT0 > ### Run 5 starts on worker thread 0.
-G4WT3 > ---> End of event: 0
-G4WT3 >    Absorber: total energy:  14.566 GeV
-G4WT3 > --> Event 100 starts with initial seeds (53338873,58106464).
-G4WT3 > ---> End of event: 100
-G4WT3 >    Absorber: total energy:  14.857 GeV
-G4WT3 > --> Event 200 starts with initial seeds (10553704,20685552).
-G4WT3 > ---> End of event: 200
-G4WT3 >    Absorber: total energy:  15.123 GeV
-G4WT3 > --> Event 300 starts with initial seeds (44529078,62386969).
-G4WT3 > ---> End of event: 300
-G4WT3 >    Absorber: total energy:  15.167 GeV
-G4WT6 > --> Event 400 starts with initial seeds (37135592,57106670).
-G4WT6 > ---> End of event: 400
-G4WT6 >    Absorber: total energy:  14.925 GeV
-G4WT7 > --> Event 500 starts with initial seeds (61353966,21118594).
-G4WT7 > ---> End of event: 500
-G4WT7 >    Absorber: total energy:  15.066 GeV
-G4WT1 > --> Event 600 starts with initial seeds (66850385,63070399).
-G4WT1 > ---> End of event: 600
-G4WT1 >    Absorber: total energy:  14.912 GeV
-G4WT0 > --> Event 700 starts with initial seeds (30593414,26549892).
-G4WT0 > ---> End of event: 700
-G4WT0 >    Absorber: total energy:  14.991 GeV
-G4WT4 > --> Event 800 starts with initial seeds (65583335,56435213).
-G4WT4 > ---> End of event: 800
-G4WT4 >    Absorber: total energy:  14.903 GeV
-G4WT6 > --> Event 900 starts with initial seeds (4186279,76934474).
-G4WT6 > ---> End of event: 900
-G4WT6 >    Absorber: total energy:  15.165 GeV
-G4WT1 > ... merge slave ntuples - done
-G4WT3 > ... merge slave ntuples - done
-G4WT5 > ... merge slave ntuples - done
-G4WT0 > ... merge slave ntuples - done
-G4WT7 > ... merge slave ntuples - done
-G4WT2 > ... merge slave ntuples - done
-G4WT4 > ... merge slave ntuples - done
-G4WT6 > ... merge slave ntuples - done
-... merge main ntuples - done
-... write file : B4_5.root - done
-... close file : B4_5.root - done
 0 events have been kept for refreshing and/or reviewing.
   "/vis/reviewKeptEvents" to review them one by one.
   "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
