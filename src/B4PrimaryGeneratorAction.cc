@@ -96,7 +96,7 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event *anEvent)
   G4double theta = 0.01 * G4UniformRand();
   G4double phi = 2 * pi * G4UniformRand();
   G4double x_direction = std::sin(theta) * std::cos(phi);
-  G4double y_direction = std::sin(theta) * std::cos(phi);
+  G4double y_direction = std::sin(theta) * std::sin(phi);
   G4double z_direction = std::cos(theta);
   fParticleGun->SetParticleMomentumDirection(G4ThreeVector(x_direction, y_direction, z_direction));
 
