@@ -261,27 +261,6 @@ G4VPhysicalVolume *B4DetectorConstruction::DefineVolumes()
     }
 
     //
-    // Fe in the back
-    //
-    auto back_Fe_S = new G4Box("back_Fe",                                                         // its name
-                               calorimeter_size_x / 2, calorimeter_size_y / 2, Fe_thickness / 2); // its size
-
-    auto back_Fe_LV = new G4LogicalVolume(
-        back_Fe_S,   // its solid
-        Fe_material, // its material
-        "back_Fe");  // its name
-
-    new G4PVPlacement(
-        0,                                                                                                                                                                                              // no rotation
-        G4ThreeVector(0., 0., first_position + (Fe_thickness + plastic_thickness) + scintillator_layer_num * scintillator_thickness + (scintillator_layer_num - 1) * gap_thickness + Fe_thickness / 2), // its position
-        back_Fe_LV,                                                                                                                                                                                     // its logical volume
-        "back_Fe",                                                                                                                                                                                      // its name
-        calorLV,                                                                                                                                                                                        // its mother  volume
-        false,                                                                                                                                                                                          // no boolean operation
-        0,                                                                                                                                                                                              // copy number
-        fCheckOverlaps);                                                                                                                                                                                // checking overlaps
-
-    //
     // plastic in the back
     //
     auto back_plastic_S = new G4Box("back_plastic",                                                         // its name
@@ -293,10 +272,31 @@ G4VPhysicalVolume *B4DetectorConstruction::DefineVolumes()
         "back_plastic");  // its name
 
     new G4PVPlacement(
+        0,                                                                                                                                                                                                   // no rotation
+        G4ThreeVector(0., 0., first_position + (Fe_thickness + plastic_thickness) + scintillator_layer_num * scintillator_thickness + (scintillator_layer_num - 1) * gap_thickness + plastic_thickness / 2), // its position
+        back_plastic_LV,                                                                                                                                                                                     // its logical volume
+        "back_plastic",                                                                                                                                                                                      // its name
+        calorLV,                                                                                                                                                                                             // its mother  volume
+        false,                                                                                                                                                                                               // no boolean operation
+        0,                                                                                                                                                                                                   // copy number
+        fCheckOverlaps);                                                                                                                                                                                     // checking overlaps
+
+    //
+    // Fe in the back
+    //
+    auto back_Fe_S = new G4Box("back_Fe",                                                         // its name
+                               calorimeter_size_x / 2, calorimeter_size_y / 2, Fe_thickness / 2); // its size
+
+    auto back_Fe_LV = new G4LogicalVolume(
+        back_Fe_S,   // its solid
+        Fe_material, // its material
+        "back_Fe");  // its name
+
+    new G4PVPlacement(
         0,                                                                                                                                                                                                                  // no rotation
-        G4ThreeVector(0., 0., first_position + (Fe_thickness + plastic_thickness) + scintillator_layer_num * scintillator_thickness + (scintillator_layer_num - 1) * gap_thickness + Fe_thickness + plastic_thickness / 2), // its position
-        back_plastic_LV,                                                                                                                                                                                                    // its logical volume
-        "back_plastic",                                                                                                                                                                                                     // its name
+        G4ThreeVector(0., 0., first_position + (Fe_thickness + plastic_thickness) + scintillator_layer_num * scintillator_thickness + (scintillator_layer_num - 1) * gap_thickness + plastic_thickness + Fe_thickness / 2), // its position
+        back_Fe_LV,                                                                                                                                                                                                         // its logical volume
+        "back_Fe",                                                                                                                                                                                                          // its name
         calorLV,                                                                                                                                                                                                            // its mother  volume
         false,                                                                                                                                                                                                              // no boolean operation
         0,                                                                                                                                                                                                                  // copy number
